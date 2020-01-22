@@ -16,7 +16,7 @@ const MainApp = styled.div`
   text-align:center;
   margin:auto;
   padding:0;
-  filter:blur(2px)
+  filter:blur(10px)
   `;
 
 
@@ -24,9 +24,9 @@ class App extends React.Component{
   render(){
     return (
       <>
-      <MainApp/>
+        <MainApp/>
         <Navbar />
-     </>
+      </>
     )
   }
 }
