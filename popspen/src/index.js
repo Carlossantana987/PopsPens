@@ -1,10 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { Route, BrowserRouter as Router,Switch } from 'react-router-dom'
+
+//component imports
 import App from './App';
+import PenStyles from './components/prices/PenStyles'
+import NotFound from './components/NotFound';
 
-ReactDOM.render(<App />, document.getElementById('root'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+//styling imports
+import './index.css';
+
+const routing = (
+    <Router>
+      <Switch>
+        <Route path="/" component={App} />
+        <Route path="/prices" component={PenStyles} />
+        {/* <Route path="/contact" component={Contact} /> */}
+        <Route component={NotFound} />
+      </Switch>
+        {/* <Route path="/prices" component={Prices} /> */}
+        {/* <Route path="/catalog" component={Catalog} /> */}
+    </Router>
+  )
+
+
+
+
+ReactDOM.render(routing, document.getElementById('root'));

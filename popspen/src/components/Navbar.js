@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import {Link} from 'react-router-dom'
 
 
 const Header =styled.div`
@@ -28,6 +29,7 @@ const Tab = styled.ul`
 display:flex;
 justify-content:space-around;
 width: 700px;
+text-decoration:none;
 `;
 
 const Button = styled.button`
@@ -42,7 +44,7 @@ const Button = styled.button`
 	border: 0;
 	background: transparent;
 	background-color: rgba(0,0,0, 0.3);
-	color: white;
+	color: black;
 	text-transform: uppercase;
 	letter-spacing: 0.5em;
 	outline: none;
@@ -116,21 +118,30 @@ class Navbar extends React.Component{
             <Header>
                 <Title>PopsPens</Title>
                 <Tab>
-                    <Button>
-                        Home
-                        <div className='horizontal'></div>
-	                    <div className='vertical'></div>
-                    </Button>
-                    <Button>
-                         Prices
-                         <div className='horizontal'></div>
-	                     <div className='vertical'></div>
-                     </Button>
-                     <Button>
-                         Catagory
-                         <div className='horizontal'></div>
-	                     <div className='vertical'></div>
-                     </Button>        
+					<Link to="/" style={{textDecoration:'none'}}>
+                    	<Button>
+                        	Home
+                        	<div className='horizontal'></div>
+	                    	<div className='vertical'></div>
+                    	</Button>
+					</Link>
+
+					<Link to="/prices" style={{textDecoration:'none'}}>
+                    	<Button>
+                         	Pen Styles
+                         	<div className='horizontal'></div>
+	                     	<div className='vertical'></div>
+                     	</Button>
+					 </Link>
+
+
+					 <Link to="/catalog" style={{textDecoration:'none'}}>
+                     	<Button>
+                        	 Catalog
+                         	<div className='horizontal'></div>
+	                     	<div className='vertical'></div>
+                     	</Button>
+					</Link>        
                 </Tab> 
             </Header>
         )
