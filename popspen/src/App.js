@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from 'styled-components'
 import backgroundImg from './img/backgroundImg.jpg'
+
 //Component files
 import Navbar from './components/Navbar'
 
 //Styling files
 
-const MainApp = styled.div`
+const BackgroundImg = styled.div`
   width: 100%;
   height:690px;
   background-image: url(${backgroundImg});
@@ -16,7 +17,8 @@ const MainApp = styled.div`
   text-align:center;
   margin:auto;
   padding:0;
-  filter:blur(10px)
+  z-index:-2;
+  filter:blur(2px)
   `;
 
 
@@ -24,7 +26,7 @@ class App extends React.Component{
   render(){
     return (
       <>
-        <MainApp/>
+        <BackgroundImg/>
         <Navbar />
       </>
     )
