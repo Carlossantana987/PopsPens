@@ -6,13 +6,16 @@ import {Link} from 'react-router-dom'
 const Header =styled.div`
 position: absolute;
 color:Black;
-top: 15%;
+top: 20%;
 left: 50%;
 height:150px;
 display:flex;
 flex-direction:column;
 justify-content: space-between;
 transform: translate(-50%, -50%);
+padding-bottom:50px;
+border-bottom:3px solid black;
+width:100%;
 `;
 
 
@@ -28,7 +31,6 @@ justify-content: center;
 const Tab = styled.ul`
 display:flex;
 justify-content:space-around;
-width: 700px;
 text-decoration:none;
 `;
 
