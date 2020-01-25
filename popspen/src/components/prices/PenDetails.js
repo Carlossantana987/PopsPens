@@ -4,32 +4,53 @@ import styled from 'styled-components';
 
 
 const PenDetailS = styled.div`
-    border:1px solid white;
     display: flex;
+    justify-content:space-between;
     flex-direction:row;
     align-items:center;
 `;
 
+const LeftS = styled.div`
+    margin:5%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    height: -webkit-fill-available;
+    
+`;
+
+const PenName = styled.div`
+    font-size:3.0rem;
+`;
+
 const Details = styled.div`
     height:100%;
-    border:1px solid purple;
+    font-size:1.3rem;
     display:flex;
-    flow-direction:column;
+    justify-content:center;
+    margin:1px;
 `;
 
 const Pen = styled.img`
-    width:500px;
-    height:300px;
+    height:250px;
+    border-radius:5%;
+    box-shadow:5px 5px 30px black;
 `;
 
 const PenDetails = () =>{
     return(
         <PenDetailS>
-            <Details>
-            <h1>Helow World</h1><br/>
-            <p>This is the pen your gonna by <br/>
-                yeah your gonna buy this pen homo</p>
-            </Details>
+            <LeftS>
+
+                <PenName>
+                <h1>PenName holder</h1>
+                </PenName>
+
+                <Details>
+                <p>This is placeholder text for details about the pen style and design and etc.</p>
+                </Details>
+
+            </LeftS>
             <Pen src={penStyles} alt="pen"/>
         </PenDetailS>
     )

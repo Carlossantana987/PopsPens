@@ -6,7 +6,7 @@ const PenSection = styled.div`
     position:absolute;
     width:100%;
     height:300px;
-    top: 50%;
+    top: 40%;
     display:flex;
     justify-content:center;
 `;
