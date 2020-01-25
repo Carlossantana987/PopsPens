@@ -1,18 +1,22 @@
 import React from "react"
-import Navbar from "../Navbar"
-// import styled from 'styled-components'
-import PenDetails from './PenDetails'
+import styled from 'styled-components';
+import PenDetails from './PenDetails';
 
-
-// Image imports
+const PenSection = styled.div`
+    position:absolute;
+    width:100%;
+    height:300px;
+    top: 50%;
+    display:flex;
+    justify-content:center;
+`;
 
 class PenStyles extends React.Component{
     render(){
         return (
-            <div>
-                <Navbar />
+            <PenSection>
                 <PenDetails />
-            </div>
+            </PenSection>
         )
     }
 }
