@@ -1,5 +1,14 @@
 import React from 'react'
+import styled from 'styled-components'
 
-const NotFound = () => <h1>404 Page Not Found</h1>
+const ErrorMessage = styled.h1`
+    position:absolute;
+    tranform:translate (-50%,-50%);
+    left:37%;
+    bottom:30%;
+    font-size:3.0rem;
+`;
+
+const NotFound = () => <ErrorMessage>Coming Soon</ErrorMessage>;
 
 export default NotFound

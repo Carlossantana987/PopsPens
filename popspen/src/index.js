@@ -17,7 +17,6 @@ import backgroundImg from './img/backgroundImg.jpg';
 
 const BackgroundImg = styled.div`
   width: 100%;
-  height:690px;
   background-image: url(${backgroundImg});
   background-size: cover; /* or contain depending on what you want */
   background-position: center;
