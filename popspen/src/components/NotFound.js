@@ -9,6 +9,6 @@ const ErrorMessage = styled.h1`
     font-size:3.0rem;
 `;
 
-const NotFound = () => <ErrorMessage>Coming Soon</ErrorMessage>;
+const NotFound = () => <ErrorMessage>Page Not Found</ErrorMessage>;
 
 export default NotFound
