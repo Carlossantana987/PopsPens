@@ -15,7 +15,8 @@ class App extends React.Component{
   render(){
     return (
       <>
-      <HomeUI>This is the home page</HomeUI>
+      <HomeUI>Welcome to Quality
+      </HomeUI>
       </>
     )
   }

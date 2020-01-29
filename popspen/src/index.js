@@ -12,12 +12,13 @@ import NotFound from './components/NotFound';
 //styling imports
 import './index.css';
 import styled from 'styled-components'
-import backgroundImg from './img/backgroundImg.jpg';
+import backI from './img/backI.jpg';
 
 
-const BackgroundImg = styled.div`
+const BackI = styled.div`
   width: 100%;
-  background-image: url(${backgroundImg});
+  height:900px;
+  background-image: url(${backI});
   background-size: cover; /* or contain depending on what you want */
   background-position: center;
   background-repeat: no-repeat;
@@ -26,12 +27,13 @@ const BackgroundImg = styled.div`
   padding:0;
   z-index:-2;
   filter:blur(2px)
+  border:30px solid red;
   `;
 
 
 const Routing = (
     <Router>
-      <BackgroundImg/>
+      <BackI/>
       <Navbar />
       <Switch>
         <Route exact path="/" component={App} />
@@ -39,8 +41,7 @@ const Routing = (
         {/* <Route path="/contact" component={Contact} /> */}
         <Route component={NotFound} />
       </Switch>
-        {/* <Route path="/prices" component={Prices} /> */}
-        {/* <Route path="/catalog" component={Catalog} /> */}
+
     </Router>
   )
 
