@@ -139,7 +139,7 @@ class Navbar extends React.Component{
 
 					 <Link to="/catalog" style={{textDecoration:'none'}}>
                      	<Button>
-                        	 Catalog
+                        	 About
                          	<div className='horizontal'></div>
 	                     	<div className='vertical'></div>
                      	</Button>

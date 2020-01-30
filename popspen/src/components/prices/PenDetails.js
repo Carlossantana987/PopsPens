@@ -8,6 +8,11 @@ const PenDetailS = styled.div`
     justify-content:space-between;
     flex-direction:row;
     align-items:center;
+    
+    @media (max-width: 375px){
+        flex-direction:column;
+    }
+
 `;
 
 const LeftS = styled.div`
@@ -16,6 +21,8 @@ const LeftS = styled.div`
     flex-direction:column;
     justify-content:space-around;
     height: -webkit-fill-available;
+
+    
     
 `;
 
