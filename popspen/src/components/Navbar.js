@@ -32,6 +32,13 @@ const Tab = styled.ul`
 display:flex;
 justify-content:space-around;
 text-decoration:none;
+
+	@media (max-width:375px){
+		flex-direction:column;
+		margin:0;
+		padding:0;
+		
+	}
 `;
 
 const Button = styled.button`
