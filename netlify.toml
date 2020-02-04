@@ -1,7 +1,7 @@
 [build]
   command = "npm run build"
   publish="popspen/build"
-  base = "popspen"
+  base = "popspens"
 
 [[redirects]]
   from = "/*"
