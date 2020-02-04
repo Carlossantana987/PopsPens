@@ -28,6 +28,9 @@ const LeftS = styled.div`
 
 const PenName = styled.div`
     font-size:3.0rem;
+
+    @media (min-width:375px){
+    }
 `;
 
 const Details = styled.div`
@@ -42,6 +45,10 @@ const Pen = styled.img`
     height:250px;
     border-radius:5%;
     box-shadow:5px 5px 30px black;
+
+    @media (min-width:375px){
+        height:200px
+    }
 `;
 
 const PenDetails = () =>{
