@@ -1,0 +1,9 @@
+[build]
+    command = "npm run build"
+    publish= "src/index.js"
+    base = "src"
+
+[[redirects]]
+    from = "/*"
+    to = "/index.js"
+    status = 200
