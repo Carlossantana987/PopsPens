@@ -1,9 +1,9 @@
 [build]
     command = "npm run build"
-    publish= "src/index.js"
-    base = "src"
+    publish= "public/index.html"
+    base = "public"
 
 [[redirects]]
     from = "/*"
-    to = "/index.js"
-    status = 200
+    to = "/index.html"
+    status =200
