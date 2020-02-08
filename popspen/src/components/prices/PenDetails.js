@@ -9,7 +9,7 @@ const PenDetailS = styled.div`
     flex-direction:row;
     align-items:center;
     
-    @media (max-width: 375px){
+    @media (max-width: 750px){
         flex-direction:column;
     }
 
@@ -29,7 +29,7 @@ const LeftS = styled.div`
 const PenName = styled.div`
     font-size:3.0rem;
 
-    @media (min-width:375px){
+    @media (min-width:750px){
     }
 `;
 
@@ -46,7 +46,7 @@ const Pen = styled.img`
     border-radius:5%;
     box-shadow:5px 5px 30px black;
 
-    @media (min-width:375px){
+    @media (min-width:750px){
         height:200px
     }
 `;

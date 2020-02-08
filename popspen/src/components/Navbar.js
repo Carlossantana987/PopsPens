@@ -17,7 +17,7 @@ padding-bottom:50px;
 border-bottom:3px solid black;
 width:100%;
 
-	@media (max-width:375px){
+	@media (min-width:750px){
 		padding-bottom:60px;
 	}
 `;
@@ -31,7 +31,7 @@ font-size: 70px;
 display:flex;
 justify-content: center;
 
-	@media (max-width:375px){
+	@media (min-width:750px){
 		font-size:50px;
 		margin-bottom:10px;
 	}
@@ -42,7 +42,7 @@ display:flex;
 justify-content:space-around;
 text-decoration:none;
 
-	@media (max-width:375px){
+	@media (min-width:750px){
 		flex-direction:column;
 	}
 `;
