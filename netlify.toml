@@ -1,0 +1,4 @@
+[build]
+base = "popspen/"
+publish = "popspen/build/"
+command = "npm run build"
