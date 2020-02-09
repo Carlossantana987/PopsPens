@@ -22,6 +22,10 @@ const LeftS = styled.div`
     justify-content:space-around;
     height: -webkit-fill-available;
 
+    @media (max-width: 750px){
+        text-align:center;
+        width:95%;
+        }
     
     
 `;
