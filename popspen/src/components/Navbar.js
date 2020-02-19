@@ -17,7 +17,7 @@ padding-bottom:50px;
 border-bottom:3px solid black;
 width:100%;
 
-	@media all and (max-width:375px){
+	@media all and (max-width:600px){
 		padding-bottom:60px;
 
 	}
@@ -32,7 +32,7 @@ font-size: 70px;
 display:flex;
 justify-content: center;
 
-	@media all and (max-width:375px){
+	@media all and (max-width:600px){
 		font-size:40px;
 	}
 `;
@@ -42,7 +42,7 @@ display:flex;
 justify-content:space-around;
 text-decoration:none;
 
-	@media all and (max-width:375px){
+	@media all and (max-width:600px){
 		flex-direction:column;
 	}
 `;
@@ -124,7 +124,7 @@ const Button = styled.button`
 		transform: scaleY(0);
 	}
 
-	@media all and (max-width:568px){
+	@media all and (max-width:600px){
 		width:100%;
 		margin:1px 0px;
 
