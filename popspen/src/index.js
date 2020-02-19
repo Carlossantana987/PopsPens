@@ -37,7 +37,7 @@ const Routing = (
       <Navbar />
       <Switch>
         <Route exact path="/" component={App} />
-        <Route exact path="/prices" component={PenStyles} />
+        <Route path="/prices" component={PenStyles} />
         {/* <Route path="/contact" component={Contact} /> */}
         <Route component={NotFound} />
       </Switch>
